@@ -1,5 +1,5 @@
 describe("About Arrays", function() {
-
+  // segundo exercicio resolvido
   //We shall contemplate truth by testing reality, via spec expectations.
   it("should create arrays", function() {
     var emptyArray = [];
