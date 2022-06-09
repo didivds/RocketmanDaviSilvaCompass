@@ -77,7 +77,7 @@ describe("About Functions", function() {
       return argsArray.join(",");
     }
 
-    expect(returnAllArgs("first", "second", "third")).toBe();
+    expect(returnAllArgs("first", "second", "third")).toBe('first,second,third');
   });
 
   it("should pass functions as values", function () {
@@ -91,10 +91,10 @@ describe("About Functions", function() {
     };
 
     var praiseSinger = { givePraise: appendRules };
-    expect(praiseSinger.givePraise("John")).toBe("rules");
+    expect(praiseSinger.givePraise("John")).toBe('John rules!');
 
     praiseSinger.givePraise = appendDoubleRules;
-    expect(praiseSinger.givePraise("Mary")).toBe("totally rules");
+    expect(praiseSinger.givePraise("Mary")).toBe('Mary totally rules!');
 
   });
 });
